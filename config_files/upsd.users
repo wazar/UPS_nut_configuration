@@ -1,0 +1,13 @@
+[admin]
+    password = <PASSWORD>
+    actions = SET
+    actions = FSD
+    instcmds = ALL
+    upsmon master
+
+[upsmon]
+    password = <PASSWORD>
+    upsmon master
+    actions = SET
+    actions = FSD
+    instcmds = ALL
