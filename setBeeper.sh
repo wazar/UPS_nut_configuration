@@ -8,7 +8,7 @@ output=$(upsc ups 2>&1 | grep -v '^Init SSL' | grep "ups.beeper.status")
 expected="ups.beeper.status: enabled"
 
 if [ "$output" == "$expected" ]; then
-	sudo upscmd  -u admin -p Mikaeel909 ups beeper.toggle
+	sudo upscmd  -u admin -p <PASSWORD> ups beeper.toggle
 else
 	exit
 fi
